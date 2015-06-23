@@ -1,0 +1,14 @@
+Debug: Puppet::Network::Format[msgpack]: feature msgpack is missing
+Debug: file_metadata supports formats: pson b64_zlib_yaml yaml raw
+Debug: Using cached connection for https://ps-puppet.plansource.com:8140
+Debug: Caching connection for https://ps-puppet.plansource.com:8140
+Debug: Exec[/usr/bin/vmware-uninstall-tools.pl](provider=posix): Executing check '/usr/bin/test -f /usr/bin/vmware-uninstall-tools.pl'
+Debug: Executing '/usr/bin/test -f /usr/bin/vmware-uninstall-tools.pl'
+
+
+
+
+Error: /Stage[main]/Open-vm-tools::Package/Exec[/usr/bin/vmware-uninstall-tools.pl]/onlyif: Check "/usr/bin/test -f /usr/bin/vmware-uninstall-tools.pl" exceeded timeout
+Debug: Exec[/usr/bin/yum install -y open-vm-tools.x86_64](provider=posix): Executing check '/bin/rpm -q open-vm-tools'
+Debug: Executing '/bin/rpm -q open-vm-tools'
+Debug: /Stage[main]/Open-vm-tools::Package/Exec[/usr/bin/yum install -y open-vm-tools.x86_64]/unless: open-vm-tools-9.4.6-1.el6.x86_64
